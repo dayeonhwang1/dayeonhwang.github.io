@@ -1,7 +1,9 @@
+/* Global styling */
 body {
   overflow: hidden; /* Prevents horizontal scrolling */
 }
 
+/* Title styling */
 .title-container {
   display: flex;
   justify-content: center;
@@ -21,6 +23,26 @@ body {
   animation: typing 3.5s steps(19, end), blink-caret 0.75s step-end infinite; /* Adjust steps value */
 }
 
+/* Responsive styling */
+@media (max-width: 600px) {
+  .title-container {
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Add some padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 30px; /* Reduce font size for smaller screens */
+    white-space: nowrap; /* Allow text to wrap */
+    border-right: 0.1em solid pink; /* Creates a cursor effect */
+    animation: typing 3.5s steps(19, end), blink-caret 0.75s step-end infinite; /* Adjust steps value */
+  }
+}
+
+/* Animation keyframes */
 @keyframes typing {
   from { width: 0; }
   to { width: 19ch; } /* Adjust to the number of characters */
@@ -36,6 +58,7 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Button styling */
 .coming-soon-button {
   margin-top: 30px;
   padding: 10px 20px;
