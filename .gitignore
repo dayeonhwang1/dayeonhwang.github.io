@@ -35,3 +35,9 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Node modules #
+################
+node_modules/
+yarn.lock
+yarn-error.log
