@@ -3,8 +3,8 @@ import '../App.css';
 
 const App = () => {
     return (
-        <div class="title-container">
-            <div class="title">Hi, I'm Dayeon Hwang.</div>
+        <div className="title-container">
+            <div className="title">Hi, I'm Dayeon Hwang.</div>
         </div>
     );
 };
