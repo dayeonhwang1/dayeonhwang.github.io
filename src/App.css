@@ -20,7 +20,7 @@ body {
   overflow: hidden; /* Ensures the text doesn't overflow */
   white-space: nowrap; /* Prevents the text from wrapping */
   border-right: 0.1em solid pink; /* Creates a cursor effect */
-  animation: typing 3.5s steps(19, end), blink-caret 0.75s step-end infinite; /* Adjust steps value */
+  animation: typing 2s steps(19, end), blink-caret 0.75s step-end infinite; /* Adjust steps value */
 }
 
 /* Responsive styling */
@@ -38,7 +38,7 @@ body {
     font-size: 30px; /* Reduce font size for smaller screens */
     white-space: nowrap; /* Allow text to wrap */
     border-right: 0.1em solid pink; /* Creates a cursor effect */
-    animation: typing 3.5s steps(19, end), blink-caret 0.75s step-end infinite; /* Adjust steps value */
+    animation: typing 1.5s steps(19, end), blink-caret 0.75s step-end infinite; /* Adjust steps value */
   }
 }
 
@@ -54,8 +54,8 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Button styling */
@@ -71,9 +71,18 @@ body {
   cursor: pointer;
   transition: background 0.3s, transform 0.3s;
   animation: fadeIn 2s ease-in-out; /* Apply the fadeIn animation */
+  animation-fill-mode: forwards; /* Ensure the button stays visible after animation */
+  opacity: 0; /* Start with the button hidden */
 }
   
 .coming-soon-button:hover {
   background: linear-gradient(45deg, #7873f5, #ff6ec4); /* Reverse gradient on hover */
   transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+@media (max-width: 600px) {
+  .coming-soon-button:active {
+    background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Change background on click */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
 }
