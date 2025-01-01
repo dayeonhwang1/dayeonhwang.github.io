@@ -2,7 +2,9 @@
   "name": "my-react-app",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://www.dayeonhwang.com",
   "dependencies": {
+    "gh-pages": "^6.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "^5.0.1"
@@ -11,6 +13,8 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
