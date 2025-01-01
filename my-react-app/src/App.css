@@ -7,16 +7,17 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
+  flex-direction: column;
 }
 
 .title {
   font-size: 50px;
-  font-weight: bold;
+  font-weight: semi-bold;
   color: #333;
   font-family: Arial, sans-serif;
   overflow: hidden; /* Ensures the text doesn't overflow */
   white-space: nowrap; /* Prevents the text from wrapping */
-  border-right: 0.15em solid pink; /* Creates a cursor effect */
+  border-right: 0.1em solid pink; /* Creates a cursor effect */
   animation: typing 3.5s steps(19, end), blink-caret 0.75s step-end infinite; /* Adjust steps value */
 }
 
@@ -28,4 +29,28 @@ body {
 @keyframes blink-caret {
   from, to { border-color: transparent; }
   50% { border-color: pink; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.coming-soon-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: semi-bold;
+  color: white;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  animation: fadeIn 2s ease-in-out; /* Apply the fadeIn animation */
+}
+  
+.coming-soon-button:hover {
+  background: linear-gradient(45deg, #7873f5, #ff6ec4); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
