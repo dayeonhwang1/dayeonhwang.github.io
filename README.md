@@ -1,5 +1,3 @@
-# FILE: /my-react-app/my-react-app/README.md
-
 # My React App
 
 This is a simple React application that displays "Hello, World!" on the screen.

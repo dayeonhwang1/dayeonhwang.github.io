@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+  overflow: hidden; /* Prevents horizontal scrolling */
 }
 
 .title-container {
