@@ -1,3 +1,7 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
+}
+
 .header {
     position: sticky;
     top: 0;

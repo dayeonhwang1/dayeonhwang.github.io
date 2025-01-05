@@ -1,3 +1,7 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
+}
+
 .title {
     font-size: 50px;
     font-weight: semi-bold;
@@ -42,6 +46,7 @@
     animation: fadeIn 2s ease-in-out; /* Apply the fadeIn animation */
     animation-fill-mode: forwards; /* Ensure the button stays visible after animation */
     opacity: 0; /* Start with the button hidden */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
   }
     
   .coming-soon-button:hover {
