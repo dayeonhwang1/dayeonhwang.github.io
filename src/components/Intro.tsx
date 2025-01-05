@@ -1,8 +1,9 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { Page } from '../interfaces/page';
 import { setPage } from '../redux/actions';
 import { IntroStrings } from '../strings/strings';
-import { Page } from '../interfaces/page';
+import './Intro.css';
 
 const Intro: React.FC = () => {
     const dispatch = useDispatch();
