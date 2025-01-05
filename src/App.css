@@ -1,4 +1,8 @@
 /* Global styling */
+#root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
+}
+
 body {
   overflow: hidden; /* Prevents horizontal scrolling */
   background: linear-gradient(to bottom, #f0f0f0, #fdf7fd, #f5f5dc); /* Subtle gradient background */

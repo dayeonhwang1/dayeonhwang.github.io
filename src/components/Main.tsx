@@ -8,8 +8,8 @@ const Main: React.FC = () => {
         <>
             <Header />
             <div className="main-content">
-                <h2>{MainStrings.title}</h2>
-                <p>{MainStrings.subtitle}</p>
+                <div className="main-title">{MainStrings.title}</div>
+                <div className="main-subtitle">{MainStrings.subtitle}</div>
             </div>
         </>
     );

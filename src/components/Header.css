@@ -13,6 +13,7 @@ body {
     padding: 10px 20px;
     z-index: 1000;
     border-radius: 8px; /* Rounded corners */
+    font-weight: "semi-bold";
 }
 
 .back-button-container {
