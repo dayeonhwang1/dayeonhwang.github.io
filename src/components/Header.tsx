@@ -1,10 +1,11 @@
 import React from 'react';
-import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { HeaderStrings } from '../strings/strings';
 import { MdEmail } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
 import { Page } from '../interfaces/page';
 import { setPage } from '../redux/actions';
-import './Header.css';
+import '../styles/Header.css';
 
 const Header: React.FC = () => {
     const dispatch = useDispatch();
@@ -16,7 +17,7 @@ const Header: React.FC = () => {
     return (
         <header className="header">
             <div className="back-button-container">
-                <button className="back-button" onClick={handleBackClick}>Back</button>
+                <button className="back-button" onClick={handleBackClick}>{HeaderStrings.back}</button>
             </div>
             <div className="social-icons-container">
                 <div className="social-icons">

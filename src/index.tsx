@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './App.css';
 import { Provider } from 'react-redux';
+import App from './App';
+import './App.css';
 import store from './redux/store';
-import App from './components/App';
 
 const container = document.getElementById('root');
 if (container) {

@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { Page } from '../interfaces/page';
 import { setPage } from '../redux/actions';
 import { IntroStrings } from '../strings/strings';
-import './Intro.css';
+import '../styles/Intro.css';
 
 const Intro: React.FC = () => {
     const dispatch = useDispatch();

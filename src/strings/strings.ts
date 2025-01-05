@@ -17,8 +17,7 @@ export const HeaderStrings = {
 };
 
 export const FooterStrings = {
-    title: "© 2025 Dayeon Hwang",
-    subtitle: "All rights reserved.",
+    title: "Dayeon Hwang All rights reserved.",
     contain: "This site is built with React and Redux.",
     contact: "Contact me at contact@dayeonhwang.com"
 };

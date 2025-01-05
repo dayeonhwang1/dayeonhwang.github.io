@@ -1,7 +1,8 @@
 import React from 'react';
 import { MainStrings } from '../strings/strings';
+import '../styles/Main.css';
+import Footer from './Footer';
 import Header from './Header';
-import './Main.css';
 
 const Main: React.FC = () => {
     return (
@@ -11,6 +12,7 @@ const Main: React.FC = () => {
                 <div className="main-title">{MainStrings.title}</div>
                 <div className="main-subtitle">{MainStrings.subtitle}</div>
             </div>
+            <Footer />
         </>
     );
 };
