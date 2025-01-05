@@ -1,7 +1,6 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
 }
 
 #root {
@@ -28,11 +27,4 @@ body, html {
   .main-subtitle {
     font-size: 18px;
     color: #666;
-  }
-
-  /* Responsive styling */
-@media (max-width: 600px) {
-    .main-title, .main-subtitle {
-        font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
-    }
   }

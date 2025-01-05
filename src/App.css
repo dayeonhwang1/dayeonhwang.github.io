@@ -1,12 +1,8 @@
 /* Global styling */
-#root {
-  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
-}
-
 body {
   overflow: hidden; /* Prevents horizontal scrolling */
-  background: linear-gradient(to bottom, #f0f0f0, #fdf7fd, #f5f5dc); /* Subtle gradient background */
-  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
+  background: linear-gradient(to bottom, #f0f0f0, #f8ddf8, #f5f5dc); /* Subtle gradient background */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Title styling */
