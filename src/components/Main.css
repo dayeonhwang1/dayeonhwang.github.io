@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
 }
 
 #root {
@@ -33,6 +33,6 @@ body, html {
   /* Responsive styling */
 @media (max-width: 600px) {
     .main-title, .main-subtitle {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
+        font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
     }
   }
