@@ -29,3 +29,10 @@ body, html {
     font-size: 18px;
     color: #666;
   }
+
+  /* Responsive styling */
+@media (max-width: 600px) {
+    .main-title, .main-subtitle {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
+    }
+  }

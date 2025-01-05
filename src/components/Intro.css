@@ -28,6 +28,7 @@ body {
       white-space: nowrap; /* Allow text to wrap */
       border-right: 0.1em solid pink; /* Creates a cursor effect */
       animation: typing 1.5s steps(19, end), blink-caret 0.75s step-end infinite; /* Adjust steps value */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default font family */
     }
   }
 
