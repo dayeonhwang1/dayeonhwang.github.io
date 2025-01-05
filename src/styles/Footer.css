@@ -27,10 +27,11 @@
 
 @media (max-width: 600px) {
     .footer-content {
-        padding-bottom: 10px;
+        padding-bottom: 15px;
     }
     .footer-title {
         font-size: 12px;
+        padding-bottom: 4px;
     }
     .footer-subtitle{
         font-size: 10px;
