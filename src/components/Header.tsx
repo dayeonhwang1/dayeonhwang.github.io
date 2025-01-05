@@ -1,6 +1,5 @@
 import React from 'react';
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { HeaderStrings } from '../strings/strings';
+import { FaGithub, FaInstagram, FaLinkedin, FaArrowLeft } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
 import { Page } from '../interfaces/page';
@@ -17,7 +16,11 @@ const Header: React.FC = () => {
     return (
         <header className="header">
             <div className="back-button-container">
-                <button className="back-button" onClick={handleBackClick}>{HeaderStrings.back}</button>
+                <button className="back-button" onClick={handleBackClick}><FaArrowLeft/></button>
+            </div>
+            <div className="logo-container" onClick={handleBackClick}>
+                <div className="logo-title">DH</div>
+                <div className="logo-subtitle">Joie de vivre ♡</div>
             </div>
             <div className="social-icons-container">
                 <div className="social-icons">
